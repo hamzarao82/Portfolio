@@ -20,8 +20,7 @@ export const skills: Skill[] = [
   // Databases & Caching
   { name: 'PostgreSQL', category: 'databases' },
   { name: 'MySQL', category: 'databases' },
-  { name: 'MongoDB Atlas', category: 'databases' },
-  { name: 'Mongoose', category: 'databases' },
+  { name: 'MongoDB', category: 'databases' },
   { name: 'Redis', category: 'databases' },
   { name: 'Firebase / Supabase', category: 'databases' },
   { name: 'Prisma / Sequelize', category: 'databases' },

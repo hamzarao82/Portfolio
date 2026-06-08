@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { Hero } from '@/sections/Hero'
+import { Stats } from '@/sections/Stats'
 import { Skills } from '@/sections/Skills'
 import { Experience } from '@/sections/Experience'
 import { Education } from '@/sections/Education'
@@ -13,6 +14,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Stats />
         <Skills />
         <Experience />
         <Education />

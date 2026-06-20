@@ -2,15 +2,16 @@ import { skills } from '@/data/skills'
 import type { Skill } from '@/types'
 
 const categoryLabels: Record<Skill['category'], string> = {
-  frontend: 'Frontend',
-  backend: 'Backend',
-  databases: 'Databases & Caching',
-  'ai-cloud': 'AI & Cloud',
-  tools: 'Tools & DevOps',
-  testing: 'Testing & Monitoring',
+  frontend:       'Frontend',
+  backend:        'Backend',
+  databases:      'Databases & Caching',
+  'ai-automation': 'AI & Automation',
+  'cloud-devops':  'Cloud & DevOps',
 }
 
-const categoryOrder: Skill['category'][] = ['frontend', 'backend', 'databases', 'ai-cloud', 'tools', 'testing']
+const categoryOrder: Skill['category'][] = [
+  'frontend', 'backend', 'databases', 'ai-automation', 'cloud-devops',
+]
 
 export function Skills() {
   const grouped = categoryOrder.reduce(

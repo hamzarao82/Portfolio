@@ -4,6 +4,9 @@ import {
 } from 'react-icons/si'
 import { Button } from '@/components/ui/Button'
 
+// Replace with your Upwork profile URL when ready
+const TODO_UPWORK_URL = '#upwork'
+
 const TECH_STACK = [
   { Icon: SiTypescript, color: '#3178C6', label: 'TypeScript' },
   { Icon: SiReact,      color: '#61DAFB', label: 'React' },
@@ -17,10 +20,7 @@ const TECH_STACK = [
 
 export function Hero() {
   return (
-    <section
-      id="about"
-      className="flex min-h-screen items-center pt-14"
-    >
+    <section className="flex min-h-screen items-center pt-14">
       <div className="mx-auto flex w-full max-w-5xl flex-col-reverse items-center gap-12 px-4 sm:px-6 lg:flex-row lg:justify-between">
         {/* Left — text */}
         <div className="flex-1 text-center lg:text-left">
@@ -28,7 +28,7 @@ export function Hero() {
           <div className="mb-4 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400">
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500" />
-              Open to full-time roles
+              Available for freelance projects
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
               Remote · Onsite
@@ -36,25 +36,30 @@ export function Hero() {
           </div>
 
           <h1 className="mb-4 text-4xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-5xl xl:text-6xl">
-            Hi, I'm{' '}
+            Hamza Sarwar —{' '}
             <span className="bg-linear-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
-              Hamza Sarwar
+              Full-Stack Developer
             </span>
           </h1>
-          <p className="mb-3 text-xl font-medium text-zinc-600 dark:text-zinc-300 sm:text-2xl">
-            Full Stack Developer
+
+          <p className="mb-8 max-w-lg text-base leading-relaxed text-zinc-500 dark:text-zinc-400 sm:text-lg mx-auto lg:mx-0">
+            I build and ship production web and mobile applications end to end — React &amp; Next.js
+            frontends, Node.js and FastAPI backends, and AI-powered features on top. I own projects
+            from architecture to deployment.
           </p>
-          <p className="mb-8 max-w-lg text-base leading-relaxed text-zinc-500 dark:text-zinc-400 sm:text-lg lg:mx-0 mx-auto">
-            Full Stack Developer with 2+ years of production experience building web and mobile
-            applications across the entire stack. Proficient in React.js, Next.js, Node.js, and
-            TypeScript — passionate about scalable architecture and shipping software that works.
-          </p>
+
           <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <Button as="a" href="#projects" variant="primary">
-              View my work
+              View Projects
             </Button>
-            <Button as="a" href="#contact" variant="outline">
-              Get in touch
+            <Button
+              as="a"
+              href={TODO_UPWORK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+            >
+              Hire me ↗
             </Button>
             <Button
               as="a"
@@ -66,6 +71,19 @@ export function Hero() {
               Resume &darr;
             </Button>
           </div>
+
+          {/* Upwork availability line */}
+          <p className="mt-4 text-xs text-zinc-400 dark:text-zinc-500 text-center lg:text-left">
+            Looking to hire?{' '}
+            <a
+              href={TODO_UPWORK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-500 underline-offset-2 hover:underline"
+            >
+              Find me on Upwork ↗
+            </a>
+          </p>
 
           {/* Tech stack icons */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2 lg:justify-start">

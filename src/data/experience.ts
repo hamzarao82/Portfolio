@@ -2,17 +2,29 @@ import type { Experience } from '@/types'
 
 export const experiences: Experience[] = [
   {
+    id: '0',
+    company: '[New Company — update me]',
+    role: '[Your Role — update me]',
+    duration: '[Month Year] – Present',
+    location: '[Location — update me]',
+    current: true,
+    description: [
+      '[Outcome-focused bullet 1 — describe what you built or improved and the result]',
+      '[Outcome-focused bullet 2 — describe what you built or improved and the result]',
+    ],
+    technologies: ['[Tech 1]', '[Tech 2]', '[Tech 3]'],
+  },
+  {
     id: '1',
     company: 'Devisnor',
     role: 'Mid-Level Full Stack Developer',
-    duration: 'December 2025 – Present',
+    duration: 'December 2025 – [End Date]',
     location: 'Uzbekistan (Remote)',
-    current: true,
+    current: false,
     description: [
-      'Led end-to-end development of three production platforms — Ghar Bazaar (e-commerce), DealerFlow (multi-dashboard SaaS), and Edere (restaurant intelligence) — independently owning architecture, implementation, and deployment.',
-      'Designed polyglot backend systems combining Node.js/Express and FastAPI microservices with Redis queuing, async job processing, and AWS Lambda serverless functions.',
-      'Integrated multiple LLM APIs (Claude, OpenAI) and built AI-powered features including Playwright-based web scrapers, product recommendation engines, and automated data enrichment pipelines.',
-      'Owned full security hardening and cloud deployment across all projects — HTTPS/SSL, CORS, Helmet.js, rate limiting — deployed on AWS Amplify, Railway, and Vercel with CI/CD pipelines.',
+      'Led end-to-end development of three production platforms (Ghar Bazaar, DealerFlow, Edere) — independently owning architecture, implementation, and deployment for each.',
+      'Integrated LLM APIs (Claude, OpenAI) and built a Playwright-based scraping pipeline with a Redis async queue for automated data extraction and enrichment at scale.',
+      'Owned full security hardening and cloud deployment across all projects: HTTPS/SSL, CORS, Helmet.js, rate limiting — deployed on AWS Amplify, Railway, and Vercel with CI/CD.',
     ],
     technologies: ['Next.js', 'Node.js', 'FastAPI', 'Redis', 'AWS Lambda', 'Claude API', 'Playwright'],
   },
@@ -23,10 +35,8 @@ export const experiences: Experience[] = [
     duration: 'May 2024 – November 2025',
     location: 'Islamabad, Pakistan',
     description: [
-      'Engineered production-ready full-stack features end-to-end — from scoping requirements to shipping frontend interfaces, backend REST APIs, and database schemas using React.js, Node.js, and MySQL.',
-      'Implemented secure authentication and authorization systems including JWT-based auth flows, role-based access control (RBAC), and API key management.',
-      'Integrated third-party APIs and cloud services (Cloudinary, Supabase, Firebase) to support media management, real-time data, and scalable storage.',
-      'Contributed to agile sprints: feature planning, code reviews, debugging, and post-release iteration, consistently delivering features on schedule.',
+      'Engineered full-stack features end-to-end — scoping requirements, building React frontends, Node.js/Express backends, and MySQL schemas, then shipping to production.',
+      'Implemented JWT-based auth with RBAC and integrated third-party services (Cloudinary, Supabase, Firebase) for media management, real-time data, and scalable storage.',
     ],
     technologies: ['React.js', 'Node.js', 'MySQL', 'JWT', 'RBAC', 'Cloudinary', 'Supabase'],
   },

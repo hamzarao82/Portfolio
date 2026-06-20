@@ -1,7 +1,9 @@
 export interface Project {
   id: string
   title: string
+  problem?: string
   description: string
+  outcome?: string
   tags: string[]
   githubUrl?: string
   liveUrl?: string
@@ -23,7 +25,7 @@ export interface Experience {
 export interface Skill {
   name: string
   icon?: string
-  category: 'frontend' | 'backend' | 'databases' | 'ai-cloud' | 'tools' | 'testing'
+  category: 'frontend' | 'backend' | 'databases' | 'ai-automation' | 'cloud-devops'
 }
 
 export interface NavLink {

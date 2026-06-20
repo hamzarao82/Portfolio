@@ -5,12 +5,11 @@ import { cn } from '@/utils/cn'
 import type { NavLink } from '@/types'
 
 const NAV_LINKS: NavLink[] = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Projects',   href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Education', href: '#education' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About',      href: '#about' },
+  { label: 'Skills',     href: '#skills' },
+  { label: 'Contact',    href: '#contact' },
 ]
 
 const SECTION_IDS = NAV_LINKS.map(l => l.href.slice(1))

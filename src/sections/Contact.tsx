@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/Button'
 
+// Replace with your Upwork profile URL when ready
+const TODO_UPWORK_URL = '#upwork'
+
 const SOCIAL_LINKS = [
-  { label: 'GitHub', href: 'https://github.com/hamzarao82' },
+  { label: 'GitHub',   href: 'https://github.com/hamzarao82' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hamzasarwar-full-stack-developer/' },
-  { label: 'Email', href: 'mailto:engr.hamzarao@gmail.com' },
+  { label: 'Email',    href: 'mailto:engr.hamzarao@gmail.com' },
+  { label: 'Upwork',   href: TODO_UPWORK_URL },
 ]
 
 export function Contact() {
@@ -12,7 +16,6 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Wire up to a form backend (Formspree, EmailJS, etc.)
     setStatus('sent')
   }
 
@@ -20,8 +23,11 @@ export function Contact() {
     <section id="contact" className="py-20 sm:py-28">
       <div className="mx-auto max-w-xl px-4 sm:px-6 text-center">
         <h2 className="mb-2 text-3xl font-bold text-zinc-900 dark:text-white">Get in touch</h2>
-        <p className="mb-10 text-zinc-500 dark:text-zinc-400">
+        <p className="mb-2 text-zinc-500 dark:text-zinc-400">
           Have a project in mind or just want to say hi? My inbox is open.
+        </p>
+        <p className="mb-10 text-sm text-emerald-700 dark:text-emerald-400">
+          Available for new freelance projects — response within 24 hours.
         </p>
 
         {status === 'sent' ? (
